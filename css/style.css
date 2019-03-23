@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    z-index: -9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #0c002b;
+    /* background-color: rgb(0, 124, 97); */
+    font-family: sans-serif;
+    text-align: center;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+
+/* home */
+.home{
+    color: white;
+    overflow: auto;
+}
+.home .en/* home */,
+.navbar .en/* navbar */{
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    font-size: 12px;
+    font-weight: bold;
+}
+.home .logo/* home */,
+.navbar .logo/* navbar */{
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.home .logo h1/* home */,
+.navbar .logo h1/* navbar */{
+    font-size: 40px;
+}
+
+.home .upperspace{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+}
+
+/* center work */
+.home .center-work{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    width: 100%;
+    
+}
+.home .center-work .box{
+    width: 20%;
+    height: 40px;
+    border: 2px solid white;
+    margin: 0 auto;
+    margin-top: 3%;
+    font-size: 20px;
+    text-align: right;
+    line-height: 40px;
+}
+/* center work end */
+
+
+
+/* center trainers */
+.home .center-trainers{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    width: 100%;
+    
+}
+
+.home .center-team{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    width: 100%;
+    
+}
+.home .center-values{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    width: 100%;
+    
+}
+.home .center-trainers .left{
+    position: absolute;
+    left: 25%;
+    font-size: 35px;
+    transform: translate(-50%,-50%);
+}
+.home .center-trainers .right{
+    position: absolute;
+    left: 75%;
+    font-size: 30px;
+    transform: translate(-50%,-50%);
+}
+/* .home .center-trainers .box,
+.home .center-team .box,
+.home .center-values .box{
+    width: 20%;
+    height: 40px;
+    border: 2px solid white;
+    margin: 0 auto;
+    margin-top: 3%;
+    font-size: 20px;
+    text-align: right;
+    line-height: 40px;
+} */
+/* center trainers end */
+
+
+
+/*home bottom */
+.home .bottom{
+    position: fixed;
+    top: 90%;
+    transform: translateY(-50%);
+    width: 100%;
+    margin-left: 50%;
+}
+.home .bottom p{
+    transform: translateX(-50%);
+}
+/* home bottom end */
+
+
+
+
+/* navigation dots */
+.home .dotstyle{
+    position: fixed;
+    top: 50%;
+    left: 95%;
+    transform: translate(-50%,-50%);
+}
+.home .dotstyle ul {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.home .dotstyle li {
+	position: relative;
+	
+	
+	margin: 11px 0;
+	width: 5px;
+	height: 12px;
+    cursor: pointer;
+    
+}
+.home .dotstyle li a {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border-radius: 6px;
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.3);
+	text-indent: -999em; /* make the text accessible to screen readers */
+	cursor: pointer;
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.3s ease, background-color 0.3s ease;
+	transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.home .dotstyle li a:focus {
+	outline: none;
+}
+.home .dotstyle li a:hover,
+.home .dotstyle li a:focus {
+	background-color: white;
+}
+.home .dotstyle li.current a {
+	background-color: white;
+	-webkit-transform: scaleY(1.7);
+	transform: scaleY(1.7);
+}
+/* navigation dots end */
+
+
+
+
+/* nav-circle on home*/
+.home .nav-circle-home{
+    position: fixed;
+    top: 10%;
+    left: 92%;
+    height: 35px;
+    width: 35px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+/* nav circle on home end */
+/* home end */
+
+
+/* navbar page */
+.navbar{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 97%;
+    height: 94vh;
+    background: rgba(255, 255, 255, 0.4);
+    display: none;
+    z-index: 100;
+    border: 5px solid rgba(0, 255, 255, 0.3);
+    border-radius: 10vh;
+    margin: 1%;
+}
+@keyframes nav-animate-nav-show{
+    0%{
+        top: 10%;
+        left: 92%;
+        transform: scale(0.04) translate(-1250%,-1250%);
+        border-radius: 10vh;
+        border: 5px solid rgba(0, 255, 255, 0.3);
+        opacity: 0;
+    }
+    20%{
+        opacity: 0.1;
+    }
+    100%{
+        transform: scale(1);
+        border-radius: 10vh;
+        border: 3px solid rgba(0, 255, 255, 0.3);
+    }
+}
+@keyframes nav-animate-nav-hide{
+    
+    0%{
+        transform: scale(1);
+        border: 0px;
+        border-radius: 10vh;
+        border: 3px solid rgba(0, 255, 255, 0.3);
+    }
+    
+    80%{
+        opacity: 0.1;
+    }
+    100%{
+        top: 10%;
+        left: 92%;
+        transform: scale(0.04) translate(-1250%,-1250%);
+        border-radius: 10vh;
+        border: 5px solid rgba(0, 255, 255, 0.3);
+        opacity: 0;
+    }
+    
+}
+
+/* .navbar .whitepage{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+} */
+.navbar .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    text-align: left;
+}
+.navbar .center ul{
+    list-style: none;
+}
+.navbar .center ul li{
+    margin-top: 30px;
+}
+.navbar .bottom{
+    position: fixed;
+    top: 90%;
+    transform: translateY(-50%);
+    width: 100%;
+    margin-left: 50%;
+}
+.navbar .bottom p{
+    transform: translateX(-50%);
+}
+.navbar .nav-exit-home{
+    position: absolute;
+    top: 8%;
+    left: 93.5%;
+    height: 35px;
+    width: 35px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+/* navbar end */
